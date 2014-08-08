@@ -1,0 +1,65 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Weather" >
+
+    <ImageView
+        android:id="@+id/weathericon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="27dp"
+        android:src="@drawable/sunny" />
+
+    <TextView
+        android:id="@+id/tempreture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/weathericon"
+        android:layout_toRightOf="@+id/weathericon"
+        android:text="48º"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="60sp" />
+
+    <TextView
+        android:id="@+id/units"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tempreture"
+        android:layout_alignBottom="@+id/tempreture"
+        android:layout_toRightOf="@+id/tempreture"
+        android:text="C"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="50sp" />
+
+    <TextView
+        android:id="@+id/info1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/weathericon"
+        android:layout_below="@+id/weathericon"
+        android:text="Partly cloudy skies with a possibility of a thunder"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/info2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/info1"
+        android:layout_below="@+id/info1"
+        android:text="Humidity"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/info3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/info2"
+        android:layout_centerVertical="true"
+        android:text="Wind Speed"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+</RelativeLayout>

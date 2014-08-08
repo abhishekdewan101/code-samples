@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+<meta charset="UTF-8">
+<title></title>
+</head>
+
+<body>
+    <script>
+        var source = new EventSource('http://localhost:10000/messages/events')
+        source.addEventListener('message',function(e){
+            console.log(e.data);
+        });
+    </script>
+</body>
+</html>

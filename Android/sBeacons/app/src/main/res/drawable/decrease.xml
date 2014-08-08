@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <animation-list xmlns:android ="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/decreasing"
+                    android:oneshot = "true">
+
+    <item android:drawable = "@drawable/border_90" android:duration = "150"/>
+    <item android:drawable = "@drawable/border_80" android:duration = "150"/>
+    <item android:drawable = "@drawable/border_70" android:duration = "150"/>
+    <item android:drawable = "@drawable/border_60" android:duration = "150"/>
+    <item android:drawable = "@drawable/border_50" android:duration = "150"/>
+    <item android:drawable = "@drawable/border_40" android:duration = "150"/>
+    <item android:drawable = "@drawable/border_30" android:duration = "150"/>
+    <item android:drawable = "@drawable/border_20" android:duration = "150"/>
+    <item android:drawable = "@drawable/border_10" android:duration = "150"/>
+</animation-list>
